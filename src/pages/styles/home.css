@@ -1,0 +1,176 @@
+#container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: center;
+}
+#header{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+    background-color: #8AA4FF;
+}
+#header #menu{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(116, 78, 244);
+}
+#header #menu span{
+    color: white;
+    font-size: 35px;
+}
+#header #profile{
+    flex:2;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#header #profile img{
+    display: flex;
+    width: 80px;
+}
+#header #appName{
+    flex: 5;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color:white;
+}
+#header #logsearch{
+    flex:3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#header #logsearch #btnbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    background-color: white;
+    border-radius: 60px;
+    height: 3rem;
+}
+#header #logsearch #btnbox button{
+    background: none;
+    border: none;
+}
+#header #logsearch #btnbox button span{
+    color: rgb(116, 78, 244);
+    font-size: 35px;
+}
+#header #logsearch #btnbox div{
+    font-size: 30px;
+}
+
+#chats{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 5;
+    background-color: white;
+    width: 100%;
+}
+.chat{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    align-items: center;
+    margin-top: 5px;
+    background-color: #FCF8F8;
+    cursor: pointer;
+    text-decoration: none;
+}
+.chat .profile{
+    flex:1;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.chat .profile img{
+    display: flex;
+    width: 80px;
+}
+.chat .content{
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+.chat .content .up{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat .content .up .name{
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+}
+.chat .content .up .timeseen{
+    margin-left: 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+.chat .content .up .timeseen .seen{
+    color:#5DF45A;
+}
+.chat .content .down{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.chat .content .down .message{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+.chat .content .down .message .unread{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #5DF45A;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    left: 20px;
+}

@@ -1,0 +1,120 @@
+*{
+    transition: 0.4s;
+}
+button{
+    cursor: pointer;
+}
+.link{
+    text-decoration: none;
+}
+#background{
+    background-image: url('../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    min-height: 100vh;
+    display: flexbox;
+}
+#newUser{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    direction: rtl;
+    align-items: center;
+    padding-top: 10px;
+}
+#newUser button{
+    border: 1px solid white;
+    width: 200px;
+    background: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 800;
+    margin-left: 50px;
+    padding: 10px 0px;
+}
+#lockIcon{
+    width: 100%;
+    flex: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px;
+    background: none;
+}
+#lockIcon img{
+    display: flex;
+    width: 150px;
+    border-radius: 50%;
+}
+#form{
+    flex: 3;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.formItem{
+    flex:1;
+    display: flexbox;
+    width: 40%;
+    flex-direction: column;
+    direction: rtl;
+    align-items: flex-start;
+    margin-top: 10px;
+
+}
+.formItem label{
+    flex: 1;
+    color: #FFFBFB;
+    font-size: 15px;
+    width: 100%;
+}
+.formItem input{
+    flex: 1;
+    border-radius: 60px;
+    background-color: #DDEFF4;
+    opacity: 50%;
+    height: 40px;
+    font-size: 18px;
+    padding: 0px 2%;
+    width: 96%;
+}
+#form button{
+    width: 40%;
+    border-radius: 60px;
+    background-color: #4EE45D;
+    opacity: 85%;
+    color: #FFFBFB;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    height: 40px;
+}
+#form button:hover{
+    background-color: white;
+    color: green;
+}
+#forgotPassword{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+#forgotPassword button{
+    width: 40%;
+    background: none;
+    padding: 10px 0px;
+    border-radius: 60px;
+    color: white;
+    border: 1px solid orangered;
+}
