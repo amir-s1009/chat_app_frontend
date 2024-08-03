@@ -1,0 +1,25 @@
+.alert{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 20px;
+    min-height: 50px;
+    transition: 1s;
+}
+.alert p{
+    font-size: 17px;
+    font-weight: 900;
+    width: 95%;
+    min-height: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    direction: rtl;
+    justify-content: flex-start;
+    color: white;
+}

@@ -213,8 +213,8 @@ let chats = [
             },
 
         ],
-        "user1IsBlocked":false,
-        "user2IsBlocked":false,
+        "user1IsBlocked":true,
+        "user2IsBlocked":true
     },
 ];
 

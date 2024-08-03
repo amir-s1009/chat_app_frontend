@@ -12,9 +12,10 @@
     direction: rtl;
     justify-content: flex-start;
     align-items: center;
-    flex: 1;
+    flex: 0.6;
     width: 100%;
     background-color: #8AA4FF;
+    position: sticky;
 }
 #header #menu{
     flex: 1;
@@ -23,7 +24,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: rgb(116, 78, 244);
+    background-color: rgb(55, 45, 193);
 }
 #header #menu span{
     color: white;
@@ -62,8 +63,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 50%;
-    background-color: white;
+    width: 70%;
+    background: none;
     border-radius: 60px;
     height: 3rem;
 }
@@ -72,7 +73,7 @@
     border: none;
 }
 #header #logsearch #btnbox button span{
-    color: rgb(116, 78, 244);
+    color: white;
     font-size: 35px;
 }
 #header #logsearch #btnbox div{
@@ -137,8 +138,8 @@
     font-size: 14px;
     display: flex;
     flex-direction: row;
-    width: 10%;
-    justify-content: space-between;
+    width: 30%;
+    justify-content: flex-end;
     align-items: center;
 }
 .chat .content .up .timeseen .seen{

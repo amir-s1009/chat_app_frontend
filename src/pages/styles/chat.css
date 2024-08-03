@@ -1,8 +1,8 @@
 #background{
     display: flex;
     flex-direction: column;
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 99vh;
 }
 #background #header{
     flex: 1;
@@ -11,6 +11,8 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 #background #header #menu{
     flex: 1;
@@ -41,7 +43,7 @@
 }
 #background #header #namelastseen #lastseen{
     font-size: 14px;
-    color:wheat;
+    color:rgb(249, 237, 216);
     flex: 1;
     display: flex;
     flex-direction: row;
@@ -52,16 +54,18 @@
     display: flex;
     flex-direction: column;
     background-image: url('../assets/walpaper.jpg');
-    flex: 10;
+    flex: 8;
     width: 100%;
     padding-top: 20px;
 }
 .outContainer, .inContainer{
     width: 100%;
-    height: 40px;
+    min-height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    margin-bottom: 10px;
+    
 }
 .outContainer{
     direction: rtl;
@@ -70,13 +74,11 @@
 .inContainer{
     direction: ltr;
     margin-left: 10px;
-    margin-top: 10px;
 }
 .outgoing, .incoming{
-    width: fit-content;
-    max-width: 48%;
-    flex-wrap: wrap;
-    height: 100%;
+    max-width: 90%;
+    flex-wrap: nowrap;
+    min-height: 100%;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -92,15 +94,28 @@
     flex-direction: row;
     height: 100%;
     justify-content: space-between;
-    align-items: flex-end;
-    background-color: #8AA4FF;
+    align-items: center;
+}
+.intimemessage .message{
+    direction: rtl;
 }
 .outtimemessage .message, .intimemessage .message{
     margin-left: 10px;
     margin-right: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    flex-wrap: wrap-reverse;
 }
 .outtimemessage .time, .intimemessage .time{
     margin: 0px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
 }
 .outgoing .outtimemessage{
     background-color: #CBEDB1;
@@ -114,4 +129,61 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 
+}
+
+#newMessage{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    direction: rtl;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+}
+#newMessage input{
+    flex: 9.5;
+    height: 100%;
+    outline: none;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: white;
+    border: none;
+}
+#newMessage button{
+    flex: 0.5;
+    height: 100%;
+    background-color: white;
+    border: none;
+}
+#newMessage button span{
+    color:#8AA4FF;
+    font-size: 45px;
+    font-weight: 900;
+}
+#background #sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    top: 70px;
+    background-color: white;
+    height: 100%;
+    width: 50%;
+    transition: 0.5s;
+
+}
+#background #sidebar #blockUnblock{
+    width: 90%;
+    margin-top: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 7px;
+    border: none;
+    background-color: #8AA4FF;
+    height: 50px;
 }

@@ -11,11 +11,11 @@ button{
     background-image: url('../assets/background.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw;
+    min-width: 100vw;
     min-height: 100vh;
-    display: flexbox;
+    display: flex;
 }
-#newUser{
+#background #newUser{
     width: 100%;
     flex: 1;
     display: flex;
@@ -25,7 +25,7 @@ button{
     align-items: center;
     padding-top: 10px;
 }
-#newUser button{
+#background #newUser button{
     border: 1px solid white;
     width: 200px;
     background: none;
@@ -35,7 +35,11 @@ button{
     margin-left: 50px;
     padding: 10px 0px;
 }
-#lockIcon{
+#background #newUser button .link{
+    height: 100%;
+    width: 100%;
+}
+#background #lockIcon{
     width: 100%;
     flex: 2;
     display: flex;
@@ -45,20 +49,20 @@ button{
     padding: 10px 0px;
     background: none;
 }
-#lockIcon img{
+#background #lockIcon img{
     display: flex;
     width: 150px;
     border-radius: 50%;
 }
-#form{
-    flex: 3;
+#background #form{
+    flex: 1;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
-.formItem{
+#background #form .formItem{
     flex:1;
     display: flexbox;
     width: 40%;
@@ -68,13 +72,13 @@ button{
     margin-top: 10px;
 
 }
-.formItem label{
+#background #form .formItem label{
     flex: 1;
     color: #FFFBFB;
     font-size: 15px;
     width: 100%;
 }
-.formItem input{
+#background #form .formItem input{
     flex: 1;
     border-radius: 60px;
     background-color: #DDEFF4;
@@ -84,7 +88,7 @@ button{
     padding: 0px 2%;
     width: 96%;
 }
-#form button{
+#background #form button{
     width: 40%;
     border-radius: 60px;
     background-color: #4EE45D;
@@ -95,14 +99,15 @@ button{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 10px;
     height: 40px;
 }
-#form button:hover{
+#background #form button:hover{
     background-color: white;
     color: green;
 }
-#forgotPassword{
+#background #forgotPassword{
+    flex: 2;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -110,7 +115,7 @@ button{
     align-items: center;
     margin-top: 20px;
 }
-#forgotPassword button{
+#background #forgotPassword button{
     width: 40%;
     background: none;
     padding: 10px 0px;
